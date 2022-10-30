@@ -16,5 +16,4 @@
 * An Anchor tag styled as a Button with an id ‘**pitch**’ that redirects to to https://background.zuri.team, with a subtext where you pitch a service for doing background checks on coders. Use a good, selling sentence.
 * An Anchor tag styled as a Button with an id ‘**book__design**’ that redirects to to https://books.zuri.team/design-rules with a subtext where you pitch the free design book offered by Zuri.
 
-**Frontend Design**
-https://www.figma.com/file/m2C1MHd8vASrLqfxSUdgxD/Designs-for-frontend?node-id=4623%3A431129
+[**Frontend Design**](https://www.figma.com/file/m2C1MHd8vASrLqfxSUdgxD/Designs-for-frontend?node-id=4623%3A431129)
