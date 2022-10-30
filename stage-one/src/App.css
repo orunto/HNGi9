@@ -1,38 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  padding: 0;
+  margin: 44px 80px 48px 80px;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#profile__section {
   display: flex;
+  gap: 24px;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  margin: 0 auto;
 }
 
-.App-link {
-  color: #61dafb;
+#profile__img {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background-image: url(./images/profile__img.png);
+  background-size: cover;
+  background-color: blueviolet;
+  margin: 0 auto;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#profile__img:hover{
+  background-image: linear-gradient(0deg, rgba(52, 64, 84, 0.75), rgba(52, 64, 84, 0.75)), url(./images/profile__img.png);
+}
+
+#twitter {
+  font-family: 'Inter';
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#slack {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  body {
+    margin: 44px 16px 48px 16px;
+  } 
 }
