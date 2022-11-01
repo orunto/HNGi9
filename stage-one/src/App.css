@@ -50,8 +50,16 @@ a {
   background-size: cover;
   opacity: 0;
   transition: inherit;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  align-items: center;
 }
 
+#camera img {
+  margin-bottom: 10px;
+  width: 24px;
+}
 #camera:hover{
   opacity: 1;
 }

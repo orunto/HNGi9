@@ -6,6 +6,7 @@ import githublogo from './images/github.svg'
 import sharebutton from './images/sharebutton.svg'
 import sharebuttonmobile from './images/sharebuttonmobile.svg'
 import sharelink from './images/sharelink.svg'
+import camera from './images/camera.svg'
 
 function App() {
   return (
@@ -17,7 +18,9 @@ function App() {
           <img src={sharebuttonmobile} alt='sharebutton' id='sharebuttonmobile' />
         </div>
         <div id="profile__img">
-          <div id='camera'></div>
+          <div id='camera'>
+            <img src={camera} alt='camera' />
+          </div>
         </div>
         <span id="twitter">0runto</span>
         <span id="slack">Orunto Eniola</span>
