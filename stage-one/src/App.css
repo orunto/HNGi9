@@ -69,7 +69,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-bottom: 136px ;
+  margin-bottom: 112px ;
 }
 
 #links__section a {
@@ -87,9 +87,28 @@ a {
   font-style: normal
 }
 
+#links__section div {
+  display: flex;
+  margin: 0 auto;
+  width: calc(100% - 288px);
+  justify-content: center;
+  gap: 24px;
+  padding: 24px 32px;
+}
+#links__section div a {
+  width: max-content;
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+}
+
 #links__section a:hover {
   background-color: #D0D5DD;
+}
 
+#links__section div a:hover {
+  background-color: transparent;
 }
 
 footer{

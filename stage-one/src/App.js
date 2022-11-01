@@ -1,6 +1,8 @@
 import './App.css';
 import zurilogo from './images/Zuri.Internship_Logo.svg'
 import ifglogo from './images/I4G.svg'
+import slacklogo from './images/slack.svg'
+import githublogo from './images/github.svg'
 
 function App() {
   return (
@@ -20,6 +22,10 @@ function App() {
         <a href='https://books.zuri.team/python-for-beginners?ref_id=<yourslackname>' id='book__python'>Python Books</a>
         <a href='https://background.zuri.team' id='pitch'>Background Check for Coders</a>
         <a href='https://books.zuri.team/design-rules' id='book__design'>Design Books</a>
+        <div>
+          <a href='https://app.slack.com/'><img src={slacklogo} alt="slack" /></a>
+          <a href='https://github.com/orunto'><img src={githublogo} alt="github" /></a>
+        </div>
       </section>
 
       <footer>
