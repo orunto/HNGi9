@@ -27,11 +27,24 @@ function App() {
       <section id='links__section'>
         <a href='https://twitter.com/0runto'>Twitter Link</a>
         <a href='https://training.zuri.team/' id='btn__zuri'>Zuri Team</a>
-        <a href='https://books.zuri.team' id='books' title='Handpicked books and customized guides to learn design and coding'>Zuri Books</a>
-        <a href='https://books.zuri.team/python-for-beginners?ref_id=<yourslackname>' id='book__python'>Python Books</a>
-        <a href='https://background.zuri.team' id='pitch'>Background Check for Coders</a>
-        <a href='https://books.zuri.team/design-rules' id='book__design'>Design Books</a>
-        <div>
+        <div className='linkswithdescription'>
+          <a href='https://books.zuri.team' id='books' title='Handpicked books and customized guides to learn design and coding'>Zuri Books</a>
+          <label>Handpicked books and customized guides to learn design and coding</label>
+        </div>
+        <div className='linkswithdescription'>
+          <a href='https://books.zuri.team/python-for-beginners?ref_id=oruntoeniola' id='book__python'>Python Books</a>
+          <label>Get top of the line python books here</label>
+        </div>
+        <div className='linkswithdescription'>
+          <a href='https://background.zuri.team' id='pitch'>Background Check for Coders</a>
+          <label>Not sure about your new hire, run a background check</label>
+        </div>
+        <div className='linkswithdescription'>
+          <a href='https://books.zuri.team/design-rules' id='book__design'>Design Books</a>
+          <label>A free book to help boost your design skills</label>
+        </div>
+
+        <div id='slackgithub'>
           <a href='https://app.slack.com/'><img src={slacklogo} alt="slack" /></a>
           <a href='https://github.com/orunto'><img src={githublogo} alt="github" /></a>
         </div>

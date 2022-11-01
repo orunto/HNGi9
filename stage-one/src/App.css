@@ -116,7 +116,17 @@ a {
   font-style: normal
 }
 
-#links__section div {
+.linkswithdescription{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+
+.linkswithdescription:hover label {
+  display: block;
+}
+#slackgithub {
   display: flex;
   margin: 0 auto;
   width: calc(100% - 288px);
@@ -124,7 +134,7 @@ a {
   gap: 24px;
   padding: 24px 32px;
 }
-#links__section div a {
+#slackgithub a {
   width: max-content;
   padding: 0;
   margin: 0;
@@ -136,9 +146,20 @@ a {
   background-color: #D0D5DD;
 }
 
-#links__section div a:hover {
+#slackgithub a:hover {
   background-color: transparent;
 }
+
+label{
+  display: none;
+}
+
+#books:hover label {
+  display: block;
+}
+
+
+
 
 footer{
   display: flex;
