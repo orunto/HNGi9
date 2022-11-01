@@ -23,7 +23,7 @@ function App() {
           </div>
         </div>
         <span id="twitter">0runto</span>
-        <span id="slack">Orunto Eniola</span>
+        <span id="slack">Orunto Eniola. Username="oruntoeniola"</span>
         
       </section>
 
