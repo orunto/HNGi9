@@ -4,15 +4,17 @@ import ifglogo from './images/I4G.svg'
 import slacklogo from './images/slack.svg'
 import githublogo from './images/github.svg'
 import sharebutton from './images/sharebutton.svg'
+import sharebuttonmobile from './images/sharebuttonmobile.svg'
 import sharelink from './images/sharelink.svg'
 
 function App() {
   return (
     <div className="App">
       <section id='profile__section'>
-        <div id='sharefunction'>
+        <div id='sharefunction' onClick={ShareFunction}>
           <img src={sharelink} alt='sharelink' id='sharelink'/>
           <img src={sharebutton} alt='sharebutton' id='sharebutton' />
+          <img src={sharebuttonmobile} alt='sharebutton' id='sharebuttonmobile' />
         </div>
         <div id="profile__img">
           <div id='camera'></div>
@@ -42,6 +44,17 @@ function App() {
       </footer>
     </div>
   );
+}
+
+
+function ShareFunction() {
+  var copyText = 'https://hngstageone.vercel.app/';
+  // copyText.select();
+  // copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText)
+  alert("link copied");
+  // var tooltip = document.getElementById("myTooltip");
+  // tooltip.innerHTML = "Copied: " + copyText.value;
 }
 
 export default App;

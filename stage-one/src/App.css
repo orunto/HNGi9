@@ -71,11 +71,16 @@ a {
   gap: 4px;
   align-self: flex-end;
   cursor: pointer;
+  align-items: center;
 }
 
 #sharebutton {
   width: 40px;
   height: 40px;
+}
+
+#sharebuttonmobile {
+  display: none;
 }
 
 #sharelink {
@@ -93,7 +98,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-bottom: 112px ;
+  margin-bottom: 56px ;
 }
 
 #links__section a {
@@ -154,6 +159,56 @@ footer span {
 
 @media (max-width: 1000px) {
   body {
-    margin: 44px 16px 48px 16px;
+    margin: 44px 16px 32px 16px;
   } 
+
+  .App{
+    gap: 32px;
+  }
+
+
+  #profile__section {
+    width: 100%;
+    margin: 0;
+  }
+
+  #twitter {
+    font-size: 18px;
+  }
+
+  #sharebutton {
+    display: none;
+  }
+
+  #sharebuttonmobile {
+    display: block;
+  }
+
+  #links__section {
+    margin-bottom: 32px;
+  }
+  #links__section a {
+    width: calc(100% - 64px);
+    margin: 0;
+    font-size: 14px;
+  }
+
+
+
+
+  footer{
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    padding: 32px 0;
+    width: 100%;
+  }
+
+  footer img {
+    height: 24px;
+  }
+
+  footer span {
+    width: max-content;
+  }
 }
