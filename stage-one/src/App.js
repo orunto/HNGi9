@@ -1,13 +1,32 @@
 import './App.css';
+import zurilogo from './images/Zuri.Internship_Logo.svg'
+import ifglogo from './images/I4G.svg'
 
 function App() {
   return (
     <div className="App">
       <section id='profile__section'>
-        <div id="profile__img"></div>
+        <div id="profile__img">
+          <div id='camera'></div>
+        </div>
         <span id="twitter">0runto</span>
         <span id="slack">Orunto Eniola</span>
       </section>
+
+      <section id='links__section'>
+        <a href='https://twitter.com/0runto'>Twitter Link</a>
+        <a href='https://training.zuri.team/' id='btn__zuri'>Zuri Team</a>
+        <a href='https://books.zuri.team' id='books' title='Handpicked books and customized guides to learn design and coding'>Zuri Books</a>
+        <a href='https://books.zuri.team/python-for-beginners?ref_id=<yourslackname>' id='book__python'>Python Books</a>
+        <a href='https://background.zuri.team' id='pitch'>Background Check for Coders</a>
+        <a href='https://books.zuri.team/design-rules' id='book__design'>Design Books</a>
+      </section>
+
+      <footer>
+        <img src={zurilogo} alt='Zuri Internship Logo'/>
+        <span>HNG Internship 9 Frontend Task</span>
+        <img src={ifglogo} alt='Ingressive for good Logo'/>
+      </footer>
     </div>
   );
 }
