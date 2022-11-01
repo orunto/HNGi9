@@ -3,16 +3,23 @@ import zurilogo from './images/Zuri.Internship_Logo.svg'
 import ifglogo from './images/I4G.svg'
 import slacklogo from './images/slack.svg'
 import githublogo from './images/github.svg'
+import sharebutton from './images/sharebutton.svg'
+import sharelink from './images/sharelink.svg'
 
 function App() {
   return (
     <div className="App">
       <section id='profile__section'>
+        <div id='sharefunction'>
+          <img src={sharelink} alt='sharelink' id='sharelink'/>
+          <img src={sharebutton} alt='sharebutton' id='sharebutton' />
+        </div>
         <div id="profile__img">
           <div id='camera'></div>
         </div>
         <span id="twitter">0runto</span>
         <span id="slack">Orunto Eniola</span>
+        
       </section>
 
       <section id='links__section'>
@@ -38,3 +45,4 @@ function App() {
 }
 
 export default App;
+

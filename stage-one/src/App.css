@@ -19,11 +19,14 @@ a {
   gap: 56px;
 }
 
+
+
+/* Profile Section */
 #profile__section {
   display: flex;
   gap: 24px;
   flex-direction: column;
-  width: 100%;
+  width: calc(100% - 416px);
   margin: 0 auto;
 }
 
@@ -62,6 +65,27 @@ a {
   display: none;
 }
 
+#sharefunction {
+  display: flex;
+  justify-content: end;
+  gap: 4px;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+#sharebutton {
+  width: 40px;
+  height: 40px;
+}
+
+#sharelink {
+  transition: 0.3s;
+  opacity: 0;
+}
+
+#sharefunction:hover #sharelink {
+  opacity: 1;
+}
 
 /* Links Section */
 #links__section {
